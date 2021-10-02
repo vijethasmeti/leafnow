@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    padding: 10;
+    background: url("plant1.jpg");
+    background-position: center;
+}
+#cart-wrap {
+    font-family: arial, sans-serif;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  #cart-products, #cart-items {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  #cart-products { width: 70%; }
+  #cart-items { width: 30%; }
+  input.cart, button.cart {
+    padding: 10px;
+    border: 0;
+    background: #ff4316;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #cart-products {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+  .p-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .p-img { max-width: 150px; }
+  .p-name, .p-price { font-weight: 700; }
+  .p-name, .p-desc, .p-price { margin: 5px 0; }
+  .p-name { text-transform: uppercase; }
+  .p-desc {
+    color: #aaa;
+    font-size: 0.9em;
+  }
+  .p-price { font-size: 1.35em; }
+  input.p-add { width: 70%; }
+  #cart-items {
+    background: #31394d;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .c-item {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .c-item > * { box-sizing: border-box; }
+  .c-name, .c-total, input.c-empty, input.c-checkout { width: 100%; }
+  .c-total, input.c-empty, input.c-checkout { margin-top: 10px; }
+  .c-del { width: 25%; }
+  .c-qty { width: 75%; }
+  .c-total {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  @media screen AND (max-width: 768px) {
+    #cart-wrap { grid-template-columns: 60% 40%; }
+    #cart-products { grid-template-columns: auto; }
+  }
+  .logo{
+         background-color:#3A9943;
+         padding:3rem 25%;
+         width: 60%;
+         font-size: 60px;
+         color:black;
+  }
+  .link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background:var(--green);
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10000;
+}
+.link .navbar a{
+    color:#666;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+  .link a:hover{
+  color:var(--green);
+  }
+  .link .active{
+    position: fixed;
+    top:0; left: 0; right: 0;
+  }
+  .link .icons a{
+    color:#666;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+  .banner-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .banner-container .banner{
+    flex:1 1 40rem;
+    height:25rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .banner-container .banner .content{
+    position: absolute;
+    top:50%; left: 4%;
+    transform: translateY(-50%);
+  }
+  
+  .banner-container .banner img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  .banner-container .banner .content span{
+    color:#666;
+    font-size:1.7rem;
+  }
+  
+  .banner-container .banner .content h3{
+    color:#333;
+    font-size:3rem;
+  }
+  .product{
+    font-size: 50px;
+    background-color:#3A9943;
+    padding:1rem 45%;
+    width: 10%;
+  }
+  .contact .row{
+	display: flex;
+	flex-wrap: wrap;
+	border:.1rem solid rgba(0,0,0,.3);
+  }
+  
+  .contact .row .map{
+	width:100%;
+	flex:1 1 40rem;
+  }
+  
+  .contact .row form{
+	padding:2rem;
+	flex:1 1 40rem;
+  }
+  
+  .contact .row form .inputBox{
+	position: relative;
+  }
+  
+  .contact .row form .inputBox input, .contact .row form .inputBox textarea{
+	width:100%;
+	border-bottom: .1rem solid rgba(0,0,0,.3);
+	padding:1rem 0;
+	margin:1.5rem 0;
+	font-size: 1.7rem;
+	text-transform: none;
+	color:#333;
+  }
+  
+  .contact .row form .inputBox textarea{
+	resize: none;
+	height:15rem;
+  }
+  
+  .contact .row form .inputBox label{
+	position: absolute;
+	top:2.3rem; left:0;
+	font-size: 1.7rem;
+  }
+  
+  .contact .row form .inputBox input:focus ~ label,
+  .contact .row form .inputBox textarea:focus ~ label,
+  .contact .row form .inputBox input:valid ~ label,
+  .contact .row form .inputBox textarea:valid ~ label{
+	top:-.1rem;
+	font-size: 1.5rem;
+	color:#666;
+  }
+  
+.footer .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap:1.5rem;
+  }
+  
+  .footer .box-container .box{
+	flex:1 1 25rem;
+  }
+  
+  .footer .box-container .box h3{
+	color:#333;
+	font-size: 2.5rem;
+	padding:1rem 0;
+  }
+  
+  .footer .box-container .box p{
+	color:#666;
+	font-size: 1.5rem;
+	padding:1rem 0;
+  }
+  
+  .footer .box-container .box a{
+	display: block;
+	color:#666;
+	font-size: 1.5rem;
+	padding:1rem 0;
+  }
+  
+  .footer .box-container .box a:hover{
+	text-decoration: underline;
+	color:var(--green);
+  }
+  
+  .follow{
+	font-size: 35px;
+	background-color:#3A9943;
+	padding:0.1rem 45%;
+	width: 100%;
+
+  }

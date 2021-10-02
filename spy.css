@@ -1,0 +1,264 @@
+title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+body{
+    margin: 0;
+    background-image: url("images/plant4.jpg");
+  
+    
+}
+ul{ border-width: 10mm;
+    height:50px;
+    position: fixed;
+    border:0;
+    width:96%;
+    padding: 30px;
+    margin-top:0;
+    font-size: 40px;
+    
+    
+    background:#3A9943;
+}
+.lnav{
+  font-size: 40px;
+  text-align: left;
+  margin-left: 0;
+}
+li {
+    list-style-image: image();
+    margin:0;
+    border:0;
+    text-align: center;
+    float:right;
+}
+.container {
+
+ 
+  padding-bottom: 20px;   
+}
+
+.main{
+    width:auto;
+    flex-shrink: 0;
+    padding-top:10px;
+    padding: 20px;
+    padding-bottom: 0%;
+    margin:5%;
+    text-align: center;
+    background-color: rgb(246, 248, 250);
+    display:inline-flex;
+    margin-bottom: 0px;
+   
+}
+
+.m-info h1{
+  font-size: 60px;
+  text-align: left;
+  margin-top:0px;
+}
+
+
+.m-info{
+  flex:2;
+  width:70%;
+  order:1;
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  padding-top: 5px;
+  padding: 30px;
+  
+  justify-content: space-evenly;
+}
+.video{
+  flex:1;
+  order:2;
+  width:30%;
+  margin-top: 22%;
+}
+#abc {
+  float:left;
+  position:fixed;
+  list-style: none;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight:bold ;
+    color: white;
+    background-color: black;
+    margin-right: 6 px;
+    border:0;
+    text-align: center;
+    
+    
+  
+}
+li a{
+    display: block;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 13px;
+    color:rgb(245, 239, 239);
+    
+    justify-content: center;
+    background-color:#3A9943;
+    padding-top :13px;
+    padding-bottom: 13px;
+    padding-left:8px;
+    padding-right:8px;
+    margin-right:auto;
+    margin-left: auto;
+    border:8px;
+    border-radius:4px  ;
+    text-align: center;
+    text-decoration:none;
+}
+li a:hover{
+    color:black;
+    padding-top :15px;
+    padding-bottom: 15px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-right:3px;
+    margin-left: 3px;
+    border:10px;
+    border-radius:4px; 
+    background-color:#5dccbd;
+}
+.quote{
+  float:left;
+ 
+  text-align: center;
+  font-size: 3.3rem;
+  margin-top: 65px;
+  height:30%;
+  padding: 15px;
+  padding-bottom: 10px;
+  max-width: 70%;
+  animation-name: jump;
+  animation-duration:1s;
+}
+blockquote {
+ 
+  padding: 0.5em 10px;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  quotes: "\201C""\201D""\2018""\2019";
+  
+}
+blockquote:before {
+  color: rgb(7, 7, 7);
+  content: open-quote;
+  font-size: 4em;
+  font-style: italic;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  
+}
+blockquote p {
+  display: inline;
+  font-style: italic;
+  color:#f7f0f0;
+}
+
+small{
+  font-size: 1.7rem;
+  color: #336699;
+  position: relative;
+  z-index: 20;
+}
+ .quote .name{   
+      z-index: 15;
+      right:-10px;
+  }
+  #stats {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+  width:100%;
+  margin-left:1%;
+  }
+  
+  #stats td, #stats th {
+    border: 1px solid rgb(15, 15, 15);
+    padding: 8px;
+  }
+  
+  #stats tr:nth-child(even){background-color: #e6a9d3;}
+  
+  #stats tr:hover {background-color: rgb(168, 233, 168);}
+  
+  #stats th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #747df8cb;
+    color: white;
+  }  
+::-webkit-scrollbar
+{
+   width: 15px; 
+}
+::-webkit-scrollbar-track
+{
+  
+   border:7px ;  
+   background-color: rgb(248, 240, 240);
+}
+::-webkit-scrollbar-thumb{
+    
+    width:15px;
+    background: linear-gradient(45deg,#3e474d,#3e474d);
+}
+#myform{
+  margin-top: 40px;
+  margin-left: 3%;
+  color:#f8f5f5;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  float: auto;
+}
+#myform label{
+  display: block;
+}
+#myform input[type="textarea"]{
+  padding:15px;
+  width:50%;
+  height:30%;
+}
+#submit{
+  border-radius: 5px;;
+}
+#cu{
+  font-size:25px;
+  color:#faf6f6;
+}
+#at{
+    font-size:13px;
+    color:#fcf6f6;
+}
+#ad{
+    font-size:13px;
+    color:#faf5f5;
+}
+.abc{
+  color: #faf6f6;
+  text-align: center;
+}
+@keyframes jump
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-200%);
+
+    }
+    100%
+    {
+        opacity:1;
+        transform: translateX(0);
+    }
+}
